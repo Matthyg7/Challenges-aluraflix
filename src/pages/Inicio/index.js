@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios"; // Librería para hacer solicitudes HTTP
 import Header from "../../componentes/Header";
 import Banner from "../../componentes/Banner";
 import Footer from "../../componentes/Footer";
@@ -16,28 +15,38 @@ function Inicio() {
   const [categorias, setCategorias] = useState([]);
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(null);
 
-  // useEffect para obtener los videos y categorías al cargar el componente
-  useEffect(() => {
-    // Obtener videos
-    axios
-      .get('https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api')
-      .then((response) => {
-        setVideos(response.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching videos:", error);
-      });
+ // useEffect para obtener los videos y categorías al cargar el componente
+ useEffect(() => {
+  // Obtener videos
+  fetch('https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api/videos')
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Error fetching videos');
+      }
+      return response.json();
+    })
+    .then((data) => {
+      setVideos(data);
+    })
+    .catch((error) => {
+      console.error('Error fetching videos:', error);
+    });
 
-    // Obtener categorías
-    axios
-      .get('https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api/categorias')
-      .then((response) => {
-        setCategorias(response.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching categories:", error);
-      });
-  }, []);
+  // Obtener categorías
+  fetch('https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api/categorias')
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Error fetching categories');
+      }
+      return response.json();
+    })
+    .then((data) => {
+      setCategorias(data);
+    })
+    .catch((error) => {
+      console.error('Error fetching categories:', error);
+    });
+}, []);
 
   // Maneja el clic en una categoría, seleccionándola o deseleccionándola
   const handleCategoriaClick = (categoria) => {

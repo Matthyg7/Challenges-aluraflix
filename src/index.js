@@ -9,6 +9,7 @@ import './reset.modules.css';
 import './index.modules.css';
 
 function App() {
+  
   return (
     <Router> {/* Configura el enrutador BrowserRouter */}
       <div>

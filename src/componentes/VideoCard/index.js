@@ -28,11 +28,12 @@ function VideoCard({ video, onEdit, onDelete }) {
   // Maneja el clic en el botón de borrar, eliminando el video
   const handleDeleteClick = (e) => {
     e.stopPropagation(); // Evitar que el clic en el botón de borrar navegue al detalle del video
-    axios
-      .delete(`https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api/${video.id}`)
-      .then(() => {
+      fetch(`https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api/${video.id}`,{
+      method: 'DELETE',
+    })
+    .then(() => {
         onDelete(video.id); // Llama a la función onDelete pasada como prop
-      })
+  })
       .catch((error) => {
         console.error("Error deleting video:", error);
       });
@@ -46,10 +47,16 @@ function VideoCard({ video, onEdit, onDelete }) {
 
   // Guarda los cambios del video editado
   const handleModalSave = (updatedVideo) => {
-    axios
-      .put(`https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api/${video.id}`, updatedVideo)
-      .then((response) => {
-        onEdit(response.data); // Llama a la función onEdit pasada como prop
+    fetch(`https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api/videos/${video.id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(updatedVideo),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        onEdit(data); // Llama a la función onEdit pasada como prop
         setModalVisible(false);
       })
       .catch((error) => {
