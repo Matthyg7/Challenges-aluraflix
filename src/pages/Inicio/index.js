@@ -20,7 +20,7 @@ function Inicio() {
   useEffect(() => {
     // Obtener videos
     axios
-      .get("https://my-json-server.typicode.com/Matthyg7/aluraflix-api")
+      .get('https://my-json-server.typicode.com/Matthyg7/aluraflix-api')
       .then((response) => {
         setVideos(response.data);
       })
@@ -30,7 +30,7 @@ function Inicio() {
 
     // Obtener categorías
     axios
-      .get("https://my-json-server.typicode.com/Matthyg7/aluraflix-api/categorias")
+      .get('https://my-json-server.typicode.com/Matthyg7/aluraflix-api/categorias')
       .then((response) => {
         setCategorias(response.data);
       })

@@ -29,7 +29,7 @@ function VideoCard({ video, onEdit, onDelete }) {
   const handleDeleteClick = (e) => {
     e.stopPropagation(); // Evitar que el clic en el botón de borrar navegue al detalle del video
     axios
-      .delete(`https://my-json-server.typicode.com/Matthyg7/aluraflix-api/${video.id}`)
+      .delete(`https://my-json-server.typicode.com/Matthyg7/aluraflix-api${video.id}`)
       .then(() => {
         onDelete(video.id); // Llama a la función onDelete pasada como prop
       })
@@ -47,7 +47,7 @@ function VideoCard({ video, onEdit, onDelete }) {
   // Guarda los cambios del video editado
   const handleModalSave = (updatedVideo) => {
     axios
-      .put(`https://my-json-server.typicode.com/Matthyg7/aluraflix-api/${video.id}`, updatedVideo)
+      .put(`https://my-json-server.typicode.com/Matthyg7/aluraflix-api${video.id}`, updatedVideo)
       .then((response) => {
         onEdit(response.data); // Llama a la función onEdit pasada como prop
         setModalVisible(false);

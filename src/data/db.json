@@ -76,18 +76,15 @@
   "categorias": [
     {
       "id": "1",
-      "titulo": "Frontend",
-      "imagen": "/frontend.jpg"
+      "titulo": "Frontend"
     },
     {
       "id": "2",
-      "titulo": "Backend",
-      "imagen": "/backend.jpg"
+      "titulo": "Backend"
     },
     {
       "id": "3",
-      "titulo": "Innovación y Gestión",
-      "imagen": "/innovacion_gestion.jpg"
+      "titulo": "Innovación y Gestión"
     }
   ]
 }
