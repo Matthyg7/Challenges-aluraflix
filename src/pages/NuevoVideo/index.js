@@ -38,7 +38,7 @@ function NuevoVideo() {
 
     // Petición POST para agregar el video
     axios
-      .post("https://my-json-server.typicode.com/Matthyg7/aluraflix-api/videos", nuevoVideo)
+      .post('https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api/videos', nuevoVideo)
       .then((response) => {
         console.log("Video added:", response.data);
         navigate("/"); // Redirige a la página de inicio después de agregar el video

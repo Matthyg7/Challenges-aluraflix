@@ -21,7 +21,7 @@ function VideoDetalles() {
       try {
         console.log("Fetching video with id:", id);
         // Petición GET para obtener el video específico
-        const response = await axios.get(`https://my-json-server.typicode.com/Matthyg7/aluraflix-api/videos/${id}`);
+        const response = await axios.get(`https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api/videos/${id}`);
         console.log("Response data:", response.data);
         setVideo(response.data); // Almacena el video en el estado local
       } catch (error) {
