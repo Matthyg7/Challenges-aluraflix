@@ -1,0 +1,47 @@
+.nav-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: static;
+  width: 100%;
+  background-color: #000;
+  padding: 10px 0 15px;
+  box-shadow: 0px -5px 29px 0px #2271d1c4;
+}
+
+.nav-bottom__button {
+  text-align: center;
+  color: #fff;
+  font-family: var(--font-family-roboto);
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-bottom span{
+  padding: 5px;
+}
+
+.nav-bottom__button.active {
+  color: #2271d1;
+}
+
+.nav-bottom__button.active span{
+  display: none;
+}
+
+.nav-bottom__icon {
+  font-size: 24px;
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+}
+
+/* Media query para ocultar la barra de navegación en pantallas más grandes */
+@media (min-width: 600px) {
+  .nav-bottom {
+    display: none;
+  }
+}

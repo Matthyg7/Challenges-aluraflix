@@ -1,0 +1,46 @@
+/* Estilo para la página de inicio */
+.inicio-page {
+  width: 100%;
+  background-color: #191919;
+}
+
+/* Contenedor general */
+.container {
+  width: auto;
+  padding: 20px;
+}
+
+/* Contenedor para las tarjetas de video */
+.video-cards {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Contenedor para el banner */
+.banner-container {
+  margin-bottom: 40px;
+}
+
+/* Estilo para los slides del banner */
+.banner-slide {
+  position: relative;
+}
+
+/* Contenedor para los videos */
+.videos-container {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 20px;
+}
+
+/* Estilo para la tarjeta de video */
+.video-card {
+  background: #333;
+  padding: 10px;
+  border-radius: 5px;
+}

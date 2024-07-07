@@ -1,0 +1,124 @@
+:root{
+  --font-family-source-sans:"Source Sans 3";
+  --font-family-roboto: "Roboto", sans-serif;
+}
+
+/* Estilo para la superposición del modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para el contenido del modal */
+.modal-content {
+  background: #1b2a41;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid lightseagreen;
+  width: 500px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Estilo para el botón de cierre del modal */
+.modal-close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilo para el título del formulario de edición de la tarjeta */
+.edit-card-form h2 {
+  color: lightseagreen;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: var(--font-family-roboto);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Estilo para las etiquetas del formulario de edición de la tarjeta */
+.edit-card-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--font-family-roboto);
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+/* Estilo para los campos de entrada del formulario de edición de la tarjeta */
+.edit-card-form input,
+.edit-card-form textarea {
+  width: 477px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-family: var(--font-family-roboto);
+  font-weight: 200;
+  font-size: 16px;
+  background-color: lightseagreen;
+}
+
+/* Estilo para el campo de selección del formulario de edición de la tarjeta */
+.edit-card-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid lightseagreen;
+  color: #fff;
+  font-family: var(--font-family-roboto);
+  font-weight: 200;
+  font-size: 16px;
+  background-color: lightseagreen;
+}
+
+/* Estilo para los campos del formulario en foco */
+.edit-card-form input:focus,
+.edit-card-form select:focus,
+.edit-card-form textarea:focus {
+  border-color: #2271d1;
+  outline: none;
+}
+
+/* Contenedor de botones del formulario de edición de la tarjeta */
+.edit-card-form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilo para los botones del formulario de edición de la tarjeta */
+.edit-card-form-buttons button[type="button"] {
+  background-color: #262626;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: var(--font-family-source-sans);
+}
+
+/* Estilo de hover para los botones del formulario de edición de la tarjeta */
+.edit-card-form-buttons button[type="button"]:hover {
+  background-color: #2271d1;
+  border: 2px solid #fff;
+}
+

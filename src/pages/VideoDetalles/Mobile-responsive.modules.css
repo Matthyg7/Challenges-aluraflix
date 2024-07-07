@@ -1,0 +1,31 @@
+@media (max-width: 460px){
+    .video-detalles-container h1 {
+        font-size: 24px;
+      }
+      
+      /* Estilo del párrafo en los detalles del video */
+      .video-detalles-container p {
+        font-size: 18px;
+      }
+      
+      /* Estilo de la imagen en los detalles del video */
+      .video-detalles-imagen {
+        width: 90%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 10px;
+      }
+      
+      /* Estilo del iframe del video */
+      .video-detalles-iframe {
+        width: 80%;
+        height: 0;
+        padding-bottom: 56.25%; /* Ratio 16:9 */
+        margin: 20px auto; /* Centra el video y da espacio arriba y abajo */
+        display: block;
+      }
+      
+      
+}

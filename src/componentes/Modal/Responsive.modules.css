@@ -1,0 +1,41 @@
+@media (min-width:600px) and (max-width: 768px) {
+
+  /* Ajuste del contenido del modal en pantallas de tablet */
+  .modal-content {
+    width: 90%; /* Ancho del 90% de la pantalla */
+    padding: 15px; /* Ajusta el relleno interno */
+  }
+
+  /* Ajuste del título del formulario en pantallas de tablet */
+  .edit-card-form h2 {
+    font-size: 18px; /* Tamaño de fuente reducido */
+    margin-bottom: 15px; /* Margen inferior reducido */
+  }
+
+  /* Ajuste de las etiquetas del formulario en pantallas de tablet */
+  .edit-card-form label {
+    font-size: 14px; /* Tamaño de fuente reducido */
+    margin-bottom: 8px; /* Margen inferior reducido */
+  }
+
+  /* Ajuste de los campos de entrada del formulario en pantallas de tablet */
+  .edit-card-form input,
+  .edit-card-form textarea {
+    width: 97%; /* Ancho completo */
+    font-size: 14px; /* Tamaño de fuente reducido */
+  }
+
+  /* Ajuste del campo de selección del formulario en pantallas de tablet */
+  .edit-card-form select {
+    font-size: 14px; /* Tamaño de fuente reducido */
+  }
+
+  /* Ajuste de los botones del formulario en pantallas de tablet */
+  .edit-card-form-buttons button[type="button"] {
+    font-size: 14px; /* Tamaño de fuente reducido */
+    padding: 8px 15px; /* Relleno interno reducido */
+  }
+  .edit-card-form-buttons {
+    justify-content: space-around;
+}
+}

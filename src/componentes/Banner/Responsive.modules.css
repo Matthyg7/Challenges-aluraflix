@@ -1,0 +1,28 @@
+@media (min-width: 600px) and (max-width: 768px) {
+    /* Estilos responsivos para el contenedor del banner */
+    .banner {
+      height: 300px; /* Ajustar altura para tablets */
+    }
+  
+    /* Estilos responsivos para el contenido del banner */
+    .banner-content {
+      padding: 15px;
+    }
+  
+    /* Estilos responsivos para el título del banner */
+    .banner-titulo {
+      font-size: 30px;
+    }
+  
+    /* Estilos responsivos para la descripción del banner */
+    .banner-descripcion {
+      font-size: 18px;
+    }
+  
+    /* Estilos responsivos para el botón de categoría del banner */
+    .banner-categoria {
+      padding: 8px 15px;
+      font-size: 12px;
+    }
+  }
+  

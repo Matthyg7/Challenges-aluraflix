@@ -1,0 +1,86 @@
+:root {
+  --color-frontend: #00aeff;
+  --color-backend: #00c86f;
+  --color-iyg: #ffba05;
+  --font-family-roboto: "Roboto", sans-serif;
+  --font-family-source-sans: "Source Sans 3", sans-serif;
+}
+
+.video-card {
+  width: 380px;
+  height: auto;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 10px;
+  transition: border-color 0.3s;
+}
+
+/* Colores específicos para cada categoría */
+.video-card.frontend {
+  border-color: var(--color-frontend);
+}
+
+.video-card.backend {
+  border-color: var(--color-backend);
+}
+
+.video-card.innovación-y-gestión {
+  border-color: var(--color-iyg);
+}
+
+.video-card__imagen {
+  width: 350px;
+  height: auto;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.video-card__info {
+  margin-top: 10px;
+}
+
+.video-card__titulo {
+  font-family: var(--font-family-roboto);
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 5px;
+}
+
+.video-card__categoria {
+  font-family: var(--font-family-roboto);
+  font-weight: 500;
+  font-size: 1em;
+  color: #dda0dd;
+  margin: 5px;
+}
+
+.video-card__descripcion {
+  font-family: var(--font-family-roboto);
+  font-weight: 300;
+  font-size: 1em;
+  margin: 10px 5px;
+}
+
+.video-card__actions {
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f5f5f5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.video-card__button {
+  width: 50%;
+  padding: 5px 10px;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: var(--font-family-source-sans);
+}
+
+.video-card__button:hover {
+  background-color: #f11ca3d4;
+}

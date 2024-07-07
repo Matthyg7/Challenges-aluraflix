@@ -1,0 +1,167 @@
+:root{
+  --font-family-source-sans: "Source Sans 3", sans-serif;
+  --font-family-roboto: "Roboto", sans-serif;
+}
+.nuevo-video-page {
+  background-color: #191919;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  background: #191919;
+  color: #fff;
+}
+
+.contenedor {
+  background-color: #1b2a41;
+}
+
+.section-title {
+  color: #fff;
+  font-family: var(--font-family-roboto);
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 20px;
+  padding: 20px;
+  border-top: 2px solid #a5a5a5;
+  border-bottom: 2px solid #a5a5a5;
+}
+
+.nuevo-video-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  background: #1b2a41;
+  padding: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+  font-family: var(--font-family-roboto);
+  font-weight: lighter;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 10px;
+  font-family: var(--font-family-roboto);
+  font-weight: 200;
+  font-size: 1rem;
+  border: 3px solid lightseagreen;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: lightseagreen;
+  color: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder,
+.form-group select::placeholder {
+  color: #fff;
+}
+
+/* Estilos para el título de la sección */
+.button-nuevo-video {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.submit-button,
+.clear-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-family-source-sans);
+  font-size: 16px;
+  background-color: #262626;
+  color: #fff;
+}
+
+.clear-button:hover {
+  background-color: #2271d1;
+}
+
+/* Custom styles */
+.contenedor h1 {
+  text-align: center;
+  color: #fff;
+  font-family: var(--font-family-roboto);
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin: 20px;
+}
+
+.contenedor p {
+  text-align: center;
+  color: #fff;
+  font-family: var(--font-family-roboto);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #121212;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+button[type="submit"] {
+  background-color: #262626;
+  color: #fff;
+  border: 2px solid #2271d1;
+  padding: 10px 20px;
+  font-family: var(--font-family-source-sans);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: #2271d1;
+  border: 2px solid #fff;
+}
+
+.clear-button{
+  border: 2px solid #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #2271d1;
+  outline: none;
+}
+
+/* Estilos para cuando el formulario se ha intentado enviar */
+.form-attempted input:not(:valid),
+.form-attempted textarea:not(:valid),
+.form-attempted select:not(:valid) {
+  border-color: #e53935;
+}
+
+.form-attempted .form-group input:not(:valid)::placeholder,
+.form-attempted .form-group textarea:not(:valid)::placeholder,
+.form-attempted .form-group select:not(:valid)::placeholder {
+  color: #e53935;
+}

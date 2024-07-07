@@ -1,0 +1,73 @@
+:root {
+  --color-frontend: #00aeff;
+  --color-backend: #00c86f;
+  --color-iyg: #ffba05;
+  --color-blanco:#fff;
+  --font-family-source-sans: "Source Sans 3", sans-serif;
+}
+
+/* Contenedor para las categorías */
+.categorias-container {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+/* Estilo para el botón de categoría */
+.categoria-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: var(--font-family-source-sans);
+  font-size: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo para la categoría Frontend */
+.categoria-button.frontend {
+  background-color: var(--color-frontend);
+  color: var(--color-blanco);
+}
+
+/* Estilo hover para la categoría Frontend */
+.categoria-button.frontend:hover {
+  background-color: #6bd1ff;
+}
+
+/* Estilo para la categoría Backend */
+.categoria-button.backend {
+  background-color: var(--color-backend);
+  color: var(--color-blanco);
+}
+
+/* Estilo hover para la categoría Backend */
+.categoria-button.backend:hover {
+  background-color: #00e17c;
+}
+
+/* Estilo para la categoría Innovación y Gestión */
+.categoria-button.innovación-y-gestión {
+  background-color: var(--color-iyg);
+  color: var(--color-blanco);
+}
+
+/* Estilo hover para la categoría Innovación y Gestión */
+.categoria-button.innovación-y-gestión:hover {
+  background-color: #ffd771;
+}
+
+/* Estilo para el botón de categoría activa - frontend */
+.categoria-button.activefrontend {
+  background-color: #6bd0ffa4;
+}
+
+/* Estilo para el botón de categoría activa - backend */
+.categoria-button.activebackend {
+  background-color: #029c57;
+}
+
+/* Estilo para el botón de categoría activa - innovación y gestión */
+.categoria-button.activeinnovación-y-gestión {
+  background-color: #cb9305;
+}

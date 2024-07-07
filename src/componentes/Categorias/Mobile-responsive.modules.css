@@ -1,0 +1,12 @@
+/* Media queries para dispositivos móviles con un ancho máximo de 480px */
+@media (max-width: 480px) {
+    .categorias-container {
+      align-items: center;
+    }
+  
+    .categoria-button {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }

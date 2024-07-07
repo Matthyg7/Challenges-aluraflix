@@ -1,0 +1,101 @@
+:root {
+  --color-frontend: #00aeff;
+  --color-backend: #00c86f;
+  --color-iyg: #ffba05;
+  --font-family-source-sans: "Source Sans 3", sans-serif;
+  --font-family-roboto: "Roboto", sans-serif;
+}
+
+/* Estilos para el contenedor del banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Imagen de fondo del banner */
+.banner-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Contenido del banner */
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Botón de categoría del banner */
+.banner-categoria {
+  font-family: var(--font-family-roboto);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos específicos para cada categoría */
+.banner-categoria.frontend {
+  background-color: var(--color-frontend);
+}
+
+.banner-categoria.backend {
+  background-color: var(--color-backend);
+}
+
+.banner-categoria.innovación-y-gestión {
+  background-color: var(--color-iyg);
+}
+
+/* Título del banner */
+.banner-titulo {
+  font-family: var(--font-family-roboto);
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Descripción del banner */
+.banner-descripcion {
+  font-family: var(--font-family-roboto);
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Personalización de los puntos de navegación del carrusel */
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #2271d1;
+}
+
+.custom-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.slick-dots li.slick-active .custom-dot {
+  background-color: #2271d1;
+}

@@ -1,0 +1,22 @@
+/* Estilo principal del footer */
+.footer {
+  width: auto;
+  background-color: #000000eb;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 4px solid #2271d1;
+  box-shadow: 0px 5px 29px 0px #2271d1c4;
+}
+
+/* Estilo para el logo dentro del footer */
+.footer__logo img {
+  height: 30px; 
+}
+
+/* Estilo para el parrafo dentro del footer */
+.footer p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 5px;
+}

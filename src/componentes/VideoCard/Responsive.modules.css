@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+  /* Ajuste de la tarjeta de video en pantallas de tablet */
+  .video-card {
+    width: 90%; /* Ancho del 90% de la pantalla */
+    padding: 5px; /* Relleno interno reducido */
+  }
+
+  /* Ajuste de la imagen dentro de la tarjeta de video en pantallas de tablet */
+  .video-card__imagen {
+    width: 100%; /* Ancho completo */
+    padding: 0; /* Sin relleno */
+  }
+
+  /* Ajuste del título dentro de la tarjeta de video en pantallas de tablet */
+  .video-card__titulo {
+    font-size: 22px;
+    margin: 5px 0;
+  }
+
+  /* Ajuste de la categoría dentro de la tarjeta de video en pantallas de tablet */
+  .video-card__categoria {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  /* Ajuste de la descripción dentro de la tarjeta de video en pantallas de tablet */
+  .video-card__descripcion {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  /* Ajuste de las acciones dentro de la tarjeta de video en pantallas de tablet */
+  .video-card__actions {
+    align-items: center;
+  }
+
+  /* Ajuste de los botones dentro de la tarjeta de video en pantallas de tablet */
+  .video-card__button {
+    width: 80%;
+  }
+}

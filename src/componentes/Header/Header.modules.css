@@ -1,0 +1,55 @@
+:root{
+  --font-family-source-sans: "Source Sans 3", sans-serif;
+}
+
+/* Contenedor principal del header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #000000eb;
+  color: #fff;
+  border-bottom: 4px solid #2271d1;
+  box-shadow: 0px 5px 29px 0px #2271d1c4;
+}
+
+/* Estilo para el logo dentro del header */
+.header__logo img {
+  height: 35px;
+}
+
+/* Estilos para la lista de navegación */
+.header__nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.header__nav ul li {
+  font-size: 16px;
+  font-family:var(--font-family-source-sans); 
+}
+
+/* Estilos para los enlaces de navegación */
+.header__nav ul li a {
+  display: flex;
+  color: #f5f5f5;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 2px solid #f5f5f5;
+  border-radius: 5px;
+  width: 90px;
+  justify-content: center;
+}
+
+/* Estilos para los enlaces al pasar el ratón y para los enlaces activos */
+.header__nav ul li a:hover,
+.header__nav ul li a.active {
+  color: #2271d1; 
+  background-color: #000000; 
+  border: 3px solid #2271d1; 
+  box-shadow: 0px 0px 12px 4px #2271d1; 
+}
+

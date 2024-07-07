@@ -1,0 +1,57 @@
+/* Definición de variables CSS para las fuentes */
+:root {
+  --font-family-source-sans: "Source Sans 3", sans-serif;
+  --font-family-roboto: "Roboto", sans-serif;
+}
+
+/* Estilo general del cuerpo */
+body {
+  background-color: indigo;
+}
+
+/* Contenedor principal de los detalles del video */
+.video-detalles-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  margin-top: 0;
+}
+
+/* Estilo del título en los detalles del video */
+.video-detalles-container h1 {
+  font-family: var(--font-family-roboto);
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+/* Estilo del párrafo en los detalles del video */
+.video-detalles-container p {
+  font-family: var(--font-family-roboto);
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #fff;
+  margin: 30px 0;
+}
+
+/* Estilo de la imagen en los detalles del video */
+.video-detalles-imagen {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto; /* Centra la imagen */
+  padding-bottom: 10px;
+}
+
+/* Estilo del iframe del video */
+.video-detalles-iframe {
+  width: 80%; /* Tamaño del video */
+  height: 0;
+  padding-bottom: 56.25%; /* Ratio 16:9 */
+  margin: 20px auto; /* Centra el video y da espacio arriba y abajo */
+  display: block;
+}
+

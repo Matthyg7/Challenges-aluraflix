@@ -1,0 +1,21 @@
+:root{
+  --color-frontend: #00aeff;
+}
+
+@media (max-width: 480px){
+    .video-card__titulo {
+        display: none;
+      }
+      
+      .video-card__categoria {
+        display: none;
+      }
+      
+      .video-card__descripcion {
+        display: none;
+      }
+      
+      .video-card__actions {
+        display: flex;
+      }
+}

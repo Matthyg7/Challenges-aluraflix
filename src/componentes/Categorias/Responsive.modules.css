@@ -1,0 +1,17 @@
+@media (min-width: 600px) and (max-width: 768px) {
+
+    /* Ajuste del contenedor de categorías en pantallas de tablet */
+    .categorias-container {
+      gap: 10px; /* Reduce el espacio entre botones */
+      margin: 10px 0; /* Ajusta el margen superior e inferior */
+    }
+  
+    /* Ajuste del botón de categoría en pantallas de tablet */
+    .categoria-button {
+      padding: 8px 16px; /* Ajusta el relleno interno del botón */
+      font-size: 24px; /* Reduce el tamaño de la fuente */
+      border-radius: 4px; /* Ajusta el radio de los bordes */
+    }
+  }
+
+  

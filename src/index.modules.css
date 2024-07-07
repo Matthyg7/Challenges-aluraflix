@@ -1,0 +1,22 @@
+/* Estilos globales */
+body {
+  width: 100%;
+}
+
+/* Estilos para el contenedor del scroll */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho del scrollbar */
+}
+
+/* Estilos para la pista del scrollbar (la parte fija) */
+::-webkit-scrollbar-track {
+  background-color: #2271d17e; /* Color de la pista */
+}
+
+/* Estilos para el carro del scrollbar (la parte que se puede mover) */
+::-webkit-scrollbar-thumb {
+  background-color: #2271d1; /* Color del carro */
+  border-radius: 8px; /* Radio de borde para el carro */
+  border: 2px solid #2271d1; /* Borde alrededor del carro */
+  width: 5px;
+}

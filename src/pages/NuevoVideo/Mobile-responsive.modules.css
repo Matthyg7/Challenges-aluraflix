@@ -1,0 +1,6 @@
+@media (max-width: 480px){
+    .nuevo-video-form{
+        display: flex;
+        flex-direction: column;
+    }
+}

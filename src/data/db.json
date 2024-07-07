@@ -1,0 +1,93 @@
+{
+  "videos": [
+    {
+      "titulo": "Equipo Front End",
+      "categoria": "Frontend",
+      "imagen": "https://img.youtube.com/vi/rpvrLaBQwgg/maxresdefault.jpg",
+      "video": "https://youtu.be/rpvrLaBQwgg",
+      "descripcion": "¿Estás empezando tus estudios de Programación? ¿Te interesa todo lo que es la creación de Páginas Web Desarrollo de Softwares? ¿O estás pensando en cambiar de carrera y entrar a la maravillosa area de tecnología?\n\nEn este video, Jeanmarie Quijada, instructora Front End en Alura Latam te explica qué hace el equipo de Front End.",
+      "id": "c1ff"
+    },
+    {
+      "id": "2614",
+      "titulo": "Cómo volverse un desarrollador Front End",
+      "categoria": "Frontend",
+      "imagen": "https://img.youtube.com/vi/-Ou5c3A225k/maxresdefault.jpg",
+      "video": "https://youtu.be/-Ou5c3A225k",
+      "descripcion": "Terminé mis estudios, ¿y ahora? ¿Cómo puedo entrar al mercado laboral? ¿Cómo encontrar un trabajo front end? En este video nuestra instructor Barbara nos da algunos consejos para las personas que desean entrar en el área del desarrollo web."
+    },
+    {
+      "id": "a6f6",
+      "titulo": "¿Cómo un desarrollador Front End utiliza el Figma?",
+      "categoria": "Frontend",
+      "imagen": "https://img.youtube.com/vi/UuAX5azcvDQ/maxresdefault.jpg",
+      "video": "https://youtu.be/UuAX5azcvDQ",
+      "descripcion": "¿Cómo un desarrollador Front End utiliza el Figma? En este Alura+, Genesys, instructora de Alura Latam, nos responde esa pregunta y nos muestra esta conocida herramienta. "
+    },
+    {
+      "id": "fbb1",
+      "titulo": "Explorando el poder del Back-End en el Desarrollo Web",
+      "categoria": "Backend",
+      "imagen": "https://img.youtube.com/vi/Z024LSCMqFk/maxresdefault.jpg",
+      "video": "https://youtu.be/Z024LSCMqFk",
+      "descripcion": "Explorando el poder del Back-End en el Desarrollo Web"
+    },
+    {
+      "id": "5634",
+      "titulo": "Simplificando el Back End",
+      "categoria": "Backend",
+      "imagen": "https://img.youtube.com/vi/XuSXJ9DUcvY/maxresdefault.jpg",
+      "video": "https://youtu.be/XuSXJ9DUcvY",
+      "descripcion": "¿Quieres conocer y entender mejor qué es el Back End? En este video Bismarck Berrios nos explica qué es el back end de una manera sencilla."
+    },
+    {
+      "id": "e159",
+      "titulo": "¿Cuál es la diferencia entre Front End y Back End?",
+      "categoria": "Backend",
+      "imagen": "https://img.youtube.com/vi/R9uaBxgCkyA/maxresdefault.jpg",
+      "video": "https://youtu.be/R9uaBxgCkyA",
+      "descripcion": "¿Cuál es la diferencia entre Front End y Back End? En este Alura Más, Jeanmarie Quijada nos explica las principales diferencias y terminologias del desarrollo web."
+    },
+    {
+      "id": "d2f7",
+      "titulo": "Introducción: ¿Cómo empezar en tecnología?",
+      "categoria": "Innovación y Gestión",
+      "imagen": "https://img.youtube.com/vi/DB71zt-KAVc/maxresdefault.jpg",
+      "video": "https://youtu.be/DB71zt-KAVc",
+      "descripcion": "¿Cómo es estudiar en Alura? Conoce todos los recursos de la plataforma, donde encontrarás mucho más que cursos de tecnología. Son 168 cursos y nuevos lanzamientos todas las semanas, además de actualizaciones y mejoras constantes.\n\nTendrás acceso a cursos de tecnología y negocios digitales con nuevos lanzamientos todos los meses. En Alura encuentras cursos de Programación, Data Science, Front-End, Infraestructura e Innovación y Gestión con un aprendizaje estructurado y la didáctica de quien sabe enseñar y es reconocido en el mercado de trabajo."
+    },
+    {
+      "id": "4367",
+      "titulo": "¿Qué son las Soft Skills?",
+      "categoria": "Innovación y Gestión",
+      "imagen": " https://img.youtube.com/vi/vhwspfvI52k/maxresdefault.jpg",
+      "video": "https://youtu.be/vhwspfvI52k",
+      "descripcion": "¿Qué son las Softskills y por qué es tan importante desarrollarlas para posicionarse en el mercado laboral? En este video de Alura Tips, Pri Stuani nos habla de las habilidades más buscadas por las empresas en sus profesionales y cómo las Soft Skills te ayudan en el día a día."
+    },
+    {
+      "id": "c428",
+      "titulo": "¿Qué son las metodologias ágiles?",
+      "categoria": "Innovación y Gestión",
+      "imagen": "https://img.youtube.com/vi/6N3OkLCfK-0/maxresdefault.jpg",
+      "video": "https://youtu.be/6N3OkLCfK-0",
+      "descripcion": "En este video nuestra invitada, Andyara, nos explicará que són las muy conocidas hoy en día metodologias ágiles y nos comentará un poco sobre como aplicarlas y cuáles son los beneficios de utilizarlas en su equipo o empresa."
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "titulo": "Frontend",
+      "imagen": "/frontend.jpg"
+    },
+    {
+      "id": "2",
+      "titulo": "Backend",
+      "imagen": "/backend.jpg"
+    },
+    {
+      "id": "3",
+      "titulo": "Innovación y Gestión",
+      "imagen": "/innovacion_gestion.jpg"
+    }
+  ]
+}

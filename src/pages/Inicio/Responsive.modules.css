@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .container {
+      padding: 10px; /* Reducir el padding para mejor ajuste */
+    }
+  
+    .video-cards {
+      gap: 10px; /* Reducir el espacio entre tarjetas */
+    }
+  
+    .videos-container {
+      margin: 0;
+      justify-content: center;
+    }
+  }
