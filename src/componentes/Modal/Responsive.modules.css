@@ -42,7 +42,7 @@
 @media (max-width: 480px) {
   /* Ajuste del contenido del modal en pantallas de tablet */
   .modal-content {
-    width: 50%;
+    width: 80%;
     padding: 15px;
   }
 
