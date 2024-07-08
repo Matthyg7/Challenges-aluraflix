@@ -42,14 +42,26 @@
 @media (max-width: 480px) {
   /* Ajuste del contenido del modal en pantallas de tablet */
   .modal-content {
-    width: 70%;
+    width: 50%;
     padding: 15px;
   }
 
-  /* Ajuste de los campos de entrada del formulario en pantallas de tablet */
+  /* Ajuste de los campos de entrada del formulario en pantallas de celular */
   .edit-card-form input,
+  .edit-card-form select,
   .edit-card-form textarea {
-    width: auto; /* Ancho completo */
-    font-size: 14px; /* Tamaño de fuente reducido */
+    width: -webkit-fill-avalaible;
+    font-size: 14px;
+  }
+  /* Ajustes de los botones */
+  .edit-card-form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .edit-card-form-buttons button[type="button"]{
+    padding: 10px 15px;
+    font-size: 14px;
   }
 }
