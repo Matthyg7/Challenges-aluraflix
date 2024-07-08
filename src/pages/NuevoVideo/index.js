@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../../componentes/Header";
 import Footer from "../../componentes/Footer";
-import axios from "axios";
 import "./NuevoVideo.modules.css";
 import "./Responsive.modules.css";
 import "./Mobile-responsive.modules.css";
@@ -37,10 +36,24 @@ function NuevoVideo() {
     };
 
     // Petición POST para agregar el video
-    axios
-      .post('https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api/videos', nuevoVideo)
+    fetch(
+      "https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api/videos",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(nuevoVideo),
+      }
+    )
       .then((response) => {
-        console.log("Video added:", response.data);
+        if (!response.ok) {
+          throw new Error("Error adding video");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log("Video added:", data);
         navigate("/"); // Redirige a la página de inicio después de agregar el video
       })
       .catch((error) => {

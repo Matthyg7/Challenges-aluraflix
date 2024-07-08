@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Modal from "../Modal";
 import { AiFillEdit, AiFillDelete } from "react-icons/ai"; // Iconos de editar y borrar
-import axios from "axios"; // Librería para hacer solicitudes HTTP
 import "./VideoCard.modules.css";
 import "./Responsive.modules.css";
 import "./Mobile-responsive.modules.css";

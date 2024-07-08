@@ -1,6 +1,7 @@
 @media (max-width: 768px) {
     .container {
       padding: 10px; /* Reducir el padding para mejor ajuste */
+      height:100%;
     }
   
     .video-cards {

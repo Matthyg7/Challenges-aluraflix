@@ -9,12 +9,6 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.container {
-  margin: 0 auto;
-  padding: 20px;
-  background: #191919;
-  color: #fff;
-}
 
 .contenedor {
   background-color: #1b2a41;

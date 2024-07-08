@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../../componentes/Header";
 import Footer from "../../componentes/Footer";
-import axios from "axios";
 import "./VideoDetalles.modules.css";
 import "./Responsive.modules.css";
 import "./Mobile-responsive.modules.css";
@@ -21,9 +20,13 @@ function VideoDetalles() {
       try {
         console.log("Fetching video with id:", id);
         // Petición GET para obtener el video específico
-        const response = await axios.get(`https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api/videos/${id}`);
-        console.log("Response data:", response.data);
-        setVideo(response.data); // Almacena el video en el estado local
+        const response = await fetch (`https://my-json-server.typicode.com/Matthyg7/Challenge-aluraflix-api/videos/${id}`);
+        if (!response.ok) {
+          throw new Error('Error fetching video');
+        }
+        const data = await response.json();
+        console.log("Response data:", data);
+        setVideo(data); // Almacena el video en el estado local
       } catch (error) {
         console.error("Error fetching video:", error);
         setError("Error fetching video. Please try again later.");

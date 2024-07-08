@@ -8,6 +8,9 @@
 .container {
   width: auto;
   padding: 20px;
+  margin: 0 auto;
+  background: #191919;
+  color: #fff;
 }
 
 /* Contenedor para las tarjetas de video */
