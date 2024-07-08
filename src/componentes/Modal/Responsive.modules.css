@@ -48,7 +48,6 @@
 
   /* Ajuste de los campos de entrada del formulario en pantallas de celular */
   .edit-card-form input,
-  .edit-card-form select,
   .edit-card-form textarea {
     width: 180px;
     font-size: 14px;
