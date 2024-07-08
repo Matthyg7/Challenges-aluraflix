@@ -6,6 +6,7 @@
     }
   
     .categoria-button {
+      width: 100%;
       font-size: 16px;
       text-align: center;
       margin-bottom: 10px;
