@@ -2,10 +2,11 @@
 @media (max-width: 480px) {
     .categorias-container {
       align-items: center;
+      width: 100%
     }
   
     .categoria-button {
-      font-size: 18px;
+      font-size: 16px;
       text-align: center;
       margin-bottom: 10px;
     }
