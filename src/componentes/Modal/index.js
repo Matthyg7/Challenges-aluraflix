@@ -3,7 +3,6 @@ import ReactDOM from "react-dom"; // Importación necesaria para crear un portal
 import { AiOutlineClose } from "react-icons/ai"; // Icono de cierre de la librería react-icons
 import "./Modal.modules.css";
 import "./Responsive.modules.css";
-import"./Mobile-responsive-modules.css";
 
 // Componente Modal
 function Modal({ isOpen, onClose, children }) {
