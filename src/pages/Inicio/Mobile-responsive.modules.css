@@ -1,4 +1,7 @@
 @media (max-width: 480px) {
+  .container{
+    height: 100vh;
+  }
   .videos-container {
     height: 350px;
     display: flex;

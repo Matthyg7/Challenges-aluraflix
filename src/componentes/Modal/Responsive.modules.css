@@ -50,7 +50,7 @@
   .edit-card-form input,
   .edit-card-form select,
   .edit-card-form textarea {
-    width: -webkit-fill-avalaible;
+    width: 180px;
     font-size: 14px;
   }
   /* Ajustes de los botones */
