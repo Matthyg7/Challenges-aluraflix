@@ -39,3 +39,18 @@
     justify-content: space-around;
 }
 }
+
+@media (max-width: 480px) {
+  /* Ajuste del contenido del modal en pantallas de tablet */
+  .modal-content {
+    width: 70%;
+    padding: 15px;
+  }
+
+  /* Ajuste de los campos de entrada del formulario en pantallas de tablet */
+  .edit-card-form input,
+  .edit-card-form textarea {
+    width: auto; /* Ancho completo */
+    font-size: 14px; /* Tamaño de fuente reducido */
+  }
+}
