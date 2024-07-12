@@ -1,6 +1,7 @@
 /* Estilos globales */
 body {
   width: 100%;
+  height: auto;
 }
 
 /* Estilos para el contenedor del scroll */
@@ -21,8 +22,3 @@ body {
   width: 5px;
 }
 
-@media (max-width:480px){
-  iframe{
-    width:auto;
-  }
-}
