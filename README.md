@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# Aluraflix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aluraflix es una aplicación de gestión y visualización de videos, desarrollada con React. Permite a los usuarios agregar, editar, eliminar y ver videos clasificados por categorías.
 
-## Available Scripts
+## Tabla de Contenidos
 
-In the project directory, you can run:
+- [Descripción](#descripción)
+- [Características](#características)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Contribuir](#contribuir)
+- [Licencia](#licencia)
+- [Contacto](#contacto)
 
-### `npm start`
+## Descripción
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Aluraflix es una plataforma inspirada en Netflix, pero centrada en videos educativos. Los usuarios pueden gestionar una colección de videos, organizados por categorías, con la capacidad de ver los detalles de cada video, editarlos o eliminarlos según sea necesario.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Características
 
-### `npm test`
+- Añadir nuevos videos con detalles como título, categoría, URL de la imagen, URL del video y descripción.
+- Editar la información de videos existentes.
+- Eliminar videos de la colección.
+- Ver detalles de un video específico.
+- Navegar y filtrar videos por categorías.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalación
 
-### `npm run build`
+Sigue estos pasos para instalar y ejecutar el proyecto localmente.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clona el repositorio:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    git clone https://github.com/Matthyg7/aluraflix.git
+    cd aluraflix
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Instala las dependencias:**
 
-### `npm run eject`
+    ```bash
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Ejecuta la aplicación:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    La aplicación estará disponible en `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Uso
 
-## Learn More
+### Agregar un Nuevo Video
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Navega a la página "Agregar Video" desde el menú principal.
+2. Completa el formulario con los detalles del video.
+3. Haz clic en "Agregar Video" para guardar el video en la colección.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Editar un Video
 
-### Code Splitting
+1. Haz clic en el video que deseas editar.
+2. En la vista de detalles del video, haz clic en "Editar".
+3. Modifica los campos necesarios y guarda los cambios.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Eliminar un Video
 
-### Analyzing the Bundle Size
+1. Haz clic en el video que deseas eliminar.
+2. En la vista de detalles del video, haz clic en "Eliminar".
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Estructura del Proyecto
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+aluraflix/
+├── public/
+│ ├── index.html
+│ └── ...
+├── src/
+│ ├── componentes/
+│ │ ├── Header/
+│ │ ├── Footer/
+│ │ ├── Banner/
+│ │ ├── Categorias/
+│ │ ├── VideoCard/
+│ │ ├── NavBarBottom/
+│ │ ├── Modal/
+│ │ └── ...
+│ ├── data/
+│ │ ├── Db.json
+│ │ └── ...
+│ ├── paginas/
+│ │ ├── Inicio/
+│ │ ├── NuevoVideo/
+│ │ ├── VideoDetalles/
+│   └── ...
+├── index.js
+├──index.modules.css
+├──reset.modules.css
+├── .gitignore
+├── package.json
+├── README.md
+└── ...
 
-### Advanced Configuration
+## Contribuir
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+¡Las contribuciones son bienvenidas! Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
-### Deployment
+1. **Fork el repositorio.**
+2. **Crea una rama para tu función:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    ```bash
+    git checkout -b nombre-de-la-rama
+    ```
 
-### `npm run build` fails to minify
+3. **Realiza tus cambios y haz commits descriptivos.**
+4. **Empuja tus cambios a tu repositorio forked:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    ```bash
+    git push origin nombre-de-la-rama
+    ```
+
+5. **Abre un Pull Request.**
+
+## Licencia
+
+Este proyecto no tiene una licencia definida en este momento. El propietario del repositorio retiene todos los derechos de autor.
+
+## Contacto
+
+Si tienes alguna pregunta o comentario, no dudes en contactar a:
+
+- Elías Matías Gómez - [matthygomez87@gmail.com]
+- GitHub: [Matthyg7](https://github.com/Matthyg7)
+
