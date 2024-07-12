@@ -1,6 +1,5 @@
 @media (max-width: 480px) {
   .videos-container {
-    height: 350px;
     display: flex;
     flex-direction: column;
     overflow-y: overlay;
